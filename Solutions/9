@@ -1,0 +1,13 @@
+Task 9: List all songs with their album and band names
+sqlSELECT s.name AS song_name, s.length AS song_length,
+       a.name AS album_name, b.name AS band_name
+FROM songs s
+JOIN albums a ON s.album_id = a.id
+JOIN bands b ON a.band_id = b.id;
+Expected Outcome:
+| song_name      | song_length | album_name           | band_name       |
+|----------------|------------|----------------------|-----------------|
+| The Great Escape | 30.23      | The Great Escape    | Seventh Wonder  |
+| Welcome to Mercy Falls | 5.12 | Mercy Falls        | Seventh Wonder  |
+| One              | 7.24      | ...And Justice for All | Metallica    |
+| ...              | ...       | ...                  | ...            |

@@ -1,0 +1,10 @@
+Task 6: Order albums by release year (latest first) and name alphabetically
+sqlSELECT * FROM albums
+ORDER BY release_year DESC, name ASC;
+Expected Outcome:
+| id | name              | release_year | band_id |
+|----|-------------------|-------------|---------|
+| 2  | Tiara            | 2018        | 1       |
+| 7  | Resist           | 2018        | 4       |
+| 14 | A Storm to Come   | 2006       | 6       |
+| ... | ...             | ...         | ...     |

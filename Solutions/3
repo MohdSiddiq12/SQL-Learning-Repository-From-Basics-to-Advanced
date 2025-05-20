@@ -1,0 +1,11 @@
+Task 3: Select all albums released before 2000
+sqlSELECT * FROM albums 
+WHERE release_year < 2000;
+Expected Outcome:
+| id | name                      | release_year | band_id |
+|----|---------------------------|-------------|---------|
+| 4  | ...And Justice for All    | 1988        | 2       |
+| 6  | Master of Puppets        | 1986        | 2       |
+| 9  | Enter                    | 1997        | 4       |
+| 12 | Individual Thought Patterns | 1993      | 5       |
+| 13 | Human                    | 1991        | 5       |

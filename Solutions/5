@@ -1,0 +1,10 @@
+Task 5: Find all bands that have "Th" in their name
+sqlSELECT * FROM bands 
+WHERE name LIKE '%Th%';
+Expected Outcome:
+| id | name            |
+|----|-----------------|
+| 3  | The Ocean       |
+| 4  | Within Temptation |
+| 5  | Death           |
+| 7  | Dream Theater   |

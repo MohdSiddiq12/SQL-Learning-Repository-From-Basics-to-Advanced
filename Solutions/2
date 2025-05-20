@@ -1,0 +1,12 @@
+Task 2: Select only the names of all bands
+sqlSELECT name FROM bands;
+Expected Outcome:
+| name            |
+|-----------------|
+| Seventh Wonder  |
+| Metallica       |
+| The Ocean       |
+| Within Temptation |
+| Death           |
+| Van Canto       |
+| Dream Theater   |

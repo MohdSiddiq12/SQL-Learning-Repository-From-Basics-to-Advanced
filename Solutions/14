@@ -1,0 +1,7 @@
+Task 14: Update album release year for an album with no release year
+sqlUPDATE albums
+SET release_year = 2010
+WHERE release_year IS NULL;
+Expected Outcome:
+Query OK, 1 row affected
+Rows matched: 1  Changed: 1  Warnings: 0

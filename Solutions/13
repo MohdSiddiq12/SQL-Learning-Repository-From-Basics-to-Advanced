@@ -1,0 +1,6 @@
+5. Data Modification
+Task 13: Insert a new band
+sqlINSERT INTO bands (name)
+VALUES ('Nightwish');
+Expected Outcome:
+Query OK, 1 row affected

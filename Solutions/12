@@ -1,0 +1,16 @@
+Task 12: Find the number of songs for each band
+sqlSELECT b.name AS band_name, COUNT(s.id) AS song_count
+FROM bands b
+LEFT JOIN albums a ON b.id = a.band_id
+LEFT JOIN songs s ON a.id = s.album_id
+GROUP BY b.id, b.name;
+Expected Outcome:
+| band_name        | song_count |
+|------------------|------------|
+| Seventh Wonder   | 35         |
+| Metallica        | 27         |
+| The Ocean        | 31         |
+| Within Temptation| 30         |
+| Death            | 27         |
+| Van Canto        | 32         |
+| Dream Theater    | 0          |
