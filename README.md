@@ -186,9 +186,8 @@ Expected Outcome:
 ```
 
 **Task 11: Find the average song length for each album**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/11)
 
 Expected Outcome:
 ```
@@ -201,9 +200,8 @@ Expected Outcome:
 ```
 
 **Task 12: Find the number of songs for each band**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/12)
 
 Expected Outcome:
 ```
@@ -221,9 +219,8 @@ Expected Outcome:
 ### 5. Data Modification
 
 **Task 13: Insert a new band**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/13)
 
 Expected Outcome:
 ```
@@ -231,9 +228,8 @@ Query OK, 1 row affected
 ```
 
 **Task 14: Update album release year for an album with no release year**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/14)
 
 Expected Outcome:
 ```
@@ -242,9 +238,8 @@ Rows matched: 1  Changed: 1  Warnings: 0
 ```
 
 **Task 15: Delete a band that has no albums**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/15)
 
 Expected Outcome:
 ```
