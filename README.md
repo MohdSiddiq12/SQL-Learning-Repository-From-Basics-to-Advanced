@@ -126,9 +126,8 @@ Expected Outcome:
 ### 3. Joins and Relationships
 
 **Task 7: List all albums with their band names**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/7)
 
 Expected Outcome:
 ```
@@ -143,9 +142,8 @@ Expected Outcome:
 ```
 
 **Task 8: Find all bands that have no albums**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/8)
 
 Expected Outcome:
 ```
@@ -155,9 +153,8 @@ Expected Outcome:
 ```
 
 **Task 9: List all songs with their album and band names**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/9)
 
 Expected Outcome:
 ```
@@ -172,9 +169,8 @@ Expected Outcome:
 ### 4. Aggregations and Grouping
 
 **Task 10: Count the number of albums each band has**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/10)
 
 Expected Outcome:
 ```
