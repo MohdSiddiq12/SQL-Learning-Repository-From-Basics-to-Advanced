@@ -15,6 +15,8 @@ text
 | 5  | Death           |
 | 6  | Van Canto       |
 | 7  | Dream Theater   |
+
+
 Task 2: Select only the names of all bands
 Solution
 
