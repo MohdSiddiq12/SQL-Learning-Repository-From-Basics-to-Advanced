@@ -32,6 +32,8 @@ text
 | Death           |
 | Van Canto       |
 | Dream Theater   |
+
+
 Task 3: Select all albums released before 2000
 Solution
 
@@ -45,6 +47,8 @@ text
 | 9  | Enter                    | 1997        | 4       |
 | 12 | Individual Thought Patterns | 1993      | 5       |
 | 13 | Human                    | 1991        | 5       |
+
+
 2. Filtering and Sorting
 Task 4: Find all albums with no release year
 Solution
@@ -55,6 +59,8 @@ text
 | id | name        | release_year | band_id |
 |----|-------------|-------------|---------|
 | 1  | The Great Escape | NULL    | 1      |
+
+
 Task 5: Find all bands that have "Th" in their name
 Solution
 
