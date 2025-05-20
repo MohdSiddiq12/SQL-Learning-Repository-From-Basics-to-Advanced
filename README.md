@@ -249,9 +249,8 @@ Query OK, 1 row affected
 ### 6. Subqueries and Complex Queries
 
 **Task 16: Find all bands that have albums released after 2015**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/16)
 
 Expected Outcome:
 ```
@@ -262,9 +261,8 @@ Expected Outcome:
 ```
 
 **Task 17: Find albums that have songs longer than 8 minutes**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/17)
 
 Expected Outcome:
 ```
@@ -277,9 +275,8 @@ Expected Outcome:
 ```
 
 **Task 18: Find bands that have more than 10 songs**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/18)
 
 Expected Outcome:
 ```
@@ -296,9 +293,8 @@ Expected Outcome:
 ### 7. Advanced SQL Techniques
 
 **Task 19: Find the longest song for each band**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/19)
 
 Expected Outcome:
 ```
@@ -311,9 +307,8 @@ Expected Outcome:
 ```
 
 **Task 20: Rank songs by length within each album**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/20)
 
 Expected Outcome:
 ```
@@ -327,9 +322,8 @@ Expected Outcome:
 ```
 
 **Task 21: Create a view to show complete album information**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/21)
 
 Expected Outcome:
 ```
@@ -343,9 +337,8 @@ Expected Outcome:
 ### 8. Performance and Optimization
 
 **Task 22: Create indexes to improve query performance**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/22)
 
 Expected Outcome:
 ```
@@ -354,8 +347,10 @@ Records: 0  Duplicates: 0  Warnings: 0
 ```
 
 **Task 23: Create a stored procedure to get band statistics**
-```sql
-DELIMITER //
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/23)
+
+
 CREATE PROCEDURE GetBandStats(IN band_name_param VARCHAR(255))
 BEGIN
     SELECT b.name AS band_name,
@@ -383,8 +378,9 @@ CALL GetBandStats('Metallica');
 ```
 
 **Task 24: Create a function to calculate album length**
-```sql
-DELIMITER //
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/24)
+
 CREATE FUNCTION AlbumLength(album_id_param INT) 
 RETURNS FLOAT DETERMINISTIC
 BEGIN
