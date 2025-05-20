@@ -51,6 +51,7 @@ Expected Outcome:
 ```
 
 **Task 2: Select only the names of all bands**
+
 [Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/2)
 
 Expected Outcome:
@@ -67,9 +68,8 @@ Expected Outcome:
 ```
 
 **Task 3: Select all albums released before 2000**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/3)
 
 Expected Outcome:
 ```
@@ -85,9 +85,8 @@ Expected Outcome:
 ### 2. Filtering and Sorting
 
 **Task 4: Find all albums with no release year**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/4)
 
 Expected Outcome:
 ```
@@ -97,9 +96,8 @@ Expected Outcome:
 ```
 
 **Task 5: Find all bands that have "Th" in their name**
-```sql
--- Solution placeholder
-```
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/5)
 
 Expected Outcome:
 ```
@@ -112,9 +110,8 @@ Expected Outcome:
 ```
 
 **Task 6: Order albums by release year (latest first) and name alphabetically**
-```sql
--- Solution placeholder
-```
+ 
+ [Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/6)
 
 Expected Outcome:
 ```
