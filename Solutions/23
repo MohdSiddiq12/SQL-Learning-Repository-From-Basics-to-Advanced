@@ -1,0 +1,26 @@
+Task 23: Create a stored procedure to get band statistics
+sqlDELIMITER //
+CREATE PROCEDURE GetBandStats(IN band_name_param VARCHAR(255))
+BEGIN
+    SELECT b.name AS band_name,
+           COUNT(DISTINCT a.id) AS album_count,
+           COUNT(s.id) AS song_count,
+           AVG(s.length) AS avg_song_length,
+           SUM(s.length) AS total_song_length
+    FROM bands b
+    LEFT JOIN albums a ON b.id = a.band_id
+    LEFT JOIN songs s ON a.id = s.album_id
+    WHERE b.name = band_name_param
+    GROUP BY b.id, b.name;
+END //
+DELIMITER ;
+
+-- Call example:
+CALL GetBandStats('Metallica');
+
+-- Result:
+/*
+| band_name | album_count | song_count | avg_song_length | total_song_length |
+|-----------|-------------|------------|----------------|-------------------|
+| Metallica | 3           | 27         | 6.58           | 177.6             | 
+*/

@@ -1,0 +1,20 @@
+7. Advanced SQL Techniques
+Task 19: Find the longest song for each band
+sqlSELECT b.name AS band_name, s.name AS song_name, s.length AS song_length
+FROM bands b
+JOIN albums a ON b.id = a.band_id
+JOIN songs s ON a.id = s.album_id
+WHERE (b.id, s.length) IN (
+    SELECT b.id, MAX(s.length)
+    FROM bands b
+    JOIN albums a ON b.id = a.band_id
+    JOIN songs s ON a.id = s.album_id
+    GROUP BY b.id
+);
+Expected Outcome:
+| band_name       | song_name        | song_length |
+|-----------------|------------------|-------------|
+| Seventh Wonder  | The Great Escape | 30.23       |
+| Metallica       | ...And Justice for All | 9.82 |
+| The Ocean       | Mesopelagic: Into the Uncanny | 9.28 |
+| ...             | ...              | ...         |

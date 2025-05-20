@@ -1,0 +1,16 @@
+8. Performance and Optimization
+Task 22: Create indexes to improve query performance
+sql-- Index for improving joins between bands and albums
+CREATE INDEX idx_band_id ON albums(band_id);
+
+-- Index for improving joins between albums and songs
+CREATE INDEX idx_album_id ON songs(album_id);
+
+-- Index for filtering on release year
+CREATE INDEX idx_release_year ON albums(release_year);
+
+-- Index for sorting songs by length
+CREATE INDEX idx_song_length ON songs(length);
+Expected Outcome:
+Query OK, 0 rows affected
+Records: 0  Duplicates: 0  Warnings: 0

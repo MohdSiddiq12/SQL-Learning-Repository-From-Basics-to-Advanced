@@ -1,0 +1,23 @@
+Task 24: Create a function to calculate album length
+sqlDELIMITER //
+CREATE FUNCTION AlbumLength(album_id_param INT) 
+RETURNS FLOAT DETERMINISTIC
+BEGIN
+    DECLARE total_length FLOAT;
+    
+    SELECT SUM(length) INTO total_length
+    FROM songs
+    WHERE album_id = album_id_param;
+    
+    RETURN total_length;
+END //
+DELIMITER ;
+
+-- Usage example:
+SELECT name, AlbumLength(id) AS total_length FROM albums WHERE id = 1;
+
+-- Result:
+/*
+| name            | total_length |
+|-----------------|--------------|
+| The Great Escape| 68.5         |
