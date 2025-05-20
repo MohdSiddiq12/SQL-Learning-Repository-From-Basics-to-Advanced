@@ -51,9 +51,7 @@ Expected Outcome:
 ```
 
 **Task 2: Select only the names of all bands**
-```sql
--- Solution placeholder
-```
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/2)
 
 Expected Outcome:
 ```
