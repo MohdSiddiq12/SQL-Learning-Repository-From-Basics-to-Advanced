@@ -35,7 +35,7 @@ This repository contains SQL exercises designed to help you learn and practice S
 
 **Task 1: Select all data from the bands table**
 
-[1.Solution](#https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/1)
+[1.Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/1)
 
 Expected Outcome:
 ```
