@@ -35,7 +35,7 @@ This repository contains SQL exercises designed to help you learn and practice S
 
 **Task 1: Select all data from the bands table**
 ```sql
--- Solution placeholder
+-- Solution placeholder D:\SQL-Repo!!\Solutions\1
 ```
 
 Expected Outcome:
