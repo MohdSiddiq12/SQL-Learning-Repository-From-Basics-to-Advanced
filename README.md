@@ -349,7 +349,8 @@ Records: 0  Duplicates: 0  Warnings: 0
 Task 23: Create a stored procedure to get band statistics
 Create a stored procedure that, given a band's name, returns the band's name, the number of albums, the number of songs, the average song length, and the total song length.
 
-Solution
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/23)
 
 Expected Outcome:
 
@@ -361,7 +362,8 @@ Expected Outcome:
 Task 24: Create a function to calculate album length
 Create a SQL function that, given an album's ID, returns the total length of all songs in that album.
 
-Solution
+
+[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/24)
 
 Expected Outcome:
 
