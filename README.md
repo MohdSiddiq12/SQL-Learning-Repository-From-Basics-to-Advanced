@@ -353,10 +353,11 @@ Solution
 
 Expected Outcome:
 
-text
+
 | band_name | album_count | song_count | avg_song_length | total_song_length |
 |-----------|-------------|------------|----------------|-------------------|
 | Metallica | 3           | 27         | 6.58           | 177.6             |
+
 Task 24: Create a function to calculate album length
 Create a SQL function that, given an album's ID, returns the total length of all songs in that album.
 
@@ -364,7 +365,7 @@ Solution
 
 Expected Outcome:
 
-text
+
 | name            | total_length |
 |-----------------|--------------|
 | The Great Escape| 68.5         |
