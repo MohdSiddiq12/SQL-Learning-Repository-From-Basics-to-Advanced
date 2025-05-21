@@ -1,6 +1,8 @@
 Task 3: Select all albums released before 2000
-sqlSELECT * FROM albums 
+sql
+SELECT * FROM albums 
 WHERE release_year < 2000;
+
 Expected Outcome:
 | id | name                      | release_year | band_id |
 |----|---------------------------|-------------|---------|

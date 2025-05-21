@@ -1,6 +1,8 @@
 Task 6: Order albums by release year (latest first) and name alphabetically
-sqlSELECT * FROM albums
+sql
+SELECT * FROM albums
 ORDER BY release_year DESC, name ASC;
+
 Expected Outcome:
 | id | name              | release_year | band_id |
 |----|-------------------|-------------|---------|

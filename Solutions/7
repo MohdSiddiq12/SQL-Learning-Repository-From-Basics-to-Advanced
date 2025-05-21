@@ -1,8 +1,10 @@
 3. Joins and Relationships
 Task 7: List all albums with their band names
-sqlSELECT a.name AS album_name, b.name AS band_name
+sql
+SELECT a.name AS album_name, b.name AS band_name
 FROM albums a
 JOIN bands b ON a.band_id = b.id;
+
 Expected Outcome:
 | album_name                  | band_name       |
 |-----------------------------|-----------------|

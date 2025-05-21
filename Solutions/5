@@ -1,6 +1,8 @@
 Task 5: Find all bands that have "Th" in their name
-sqlSELECT * FROM bands 
+sql
+SELECT * FROM bands 
 WHERE name LIKE '%Th%';
+
 Expected Outcome:
 | id | name            |
 |----|-----------------|

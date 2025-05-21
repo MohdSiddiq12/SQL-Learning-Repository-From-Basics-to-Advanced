@@ -1,6 +1,8 @@
 1. Basic SQL Queries
 Task 1: Select all data from the bands table
-sqlSELECT * FROM bands;
+sql
+SELECT * FROM bands;
+
 Expected Outcome:
 | id | name            |
 |----|-----------------|

@@ -1,7 +1,9 @@
 2. Filtering and Sorting
 Task 4: Find all albums with no release year
-sqlSELECT * FROM albums 
+sql
+SELECT * FROM albums 
 WHERE release_year IS NULL;
+
 Expected Outcome:
 | id | name        | release_year | band_id |
 |----|-------------|-------------|---------|
