@@ -346,32 +346,28 @@ Query OK, 0 rows affected
 Records: 0  Duplicates: 0  Warnings: 0
 ```
 
-**Task 23: Create a stored procedure to get band statistics**
+Task 23: Create a stored procedure to get band statistics
+Create a stored procedure that, given a band's name, returns the band's name, the number of albums, the number of songs, the average song length, and the total song length.
 
-[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/23)
+Solution
 
+Expected Outcome:
 
-
--- Result:
-/*
+text
 | band_name | album_count | song_count | avg_song_length | total_song_length |
 |-----------|-------------|------------|----------------|-------------------|
-| Metallica | 3           | 27         | 6.58           | 177.6             | 
-*/
-```
+| Metallica | 3           | 27         | 6.58           | 177.6             |
+Task 24: Create a function to calculate album length
+Create a SQL function that, given an album's ID, returns the total length of all songs in that album.
 
-**Task 24: Create a function to calculate album length**
+Solution
 
-[Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/24)
+Expected Outcome:
 
-
--- Result:
-/*
+text
 | name            | total_length |
 |-----------------|--------------|
 | The Great Escape| 68.5         |
-*/
-```
 
 ## Contributing
 
