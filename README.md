@@ -351,23 +351,6 @@ Records: 0  Duplicates: 0  Warnings: 0
 [Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/23)
 
 
-CREATE PROCEDURE GetBandStats(IN band_name_param VARCHAR(255))
-BEGIN
-    SELECT b.name AS band_name,
-           COUNT(DISTINCT a.id) AS album_count,
-           COUNT(s.id) AS song_count,
-           AVG(s.length) AS avg_song_length,
-           SUM(s.length) AS total_song_length
-    FROM bands b
-    LEFT JOIN albums a ON b.id = a.band_id
-    LEFT JOIN songs s ON a.id = s.album_id
-    WHERE b.name = band_name_param
-    GROUP BY b.id, b.name;
-END //
-DELIMITER ;
-
--- Call example:
-CALL GetBandStats('Metallica');
 
 -- Result:
 /*
@@ -381,21 +364,6 @@ CALL GetBandStats('Metallica');
 
 [Solution](https://github.com/MohdSiddiq12/SQL-Learning-Repository-From-Basics-to-Advanced/blob/master/Solutions/24)
 
-CREATE FUNCTION AlbumLength(album_id_param INT) 
-RETURNS FLOAT DETERMINISTIC
-BEGIN
-    DECLARE total_length FLOAT;
-    
-    SELECT SUM(length) INTO total_length
-    FROM songs
-    WHERE album_id = album_id_param;
-    
-    RETURN total_length;
-END //
-DELIMITER ;
-
--- Usage example:
-SELECT name, AlbumLength(id) AS total_length FROM albums WHERE id = 1;
 
 -- Result:
 /*
