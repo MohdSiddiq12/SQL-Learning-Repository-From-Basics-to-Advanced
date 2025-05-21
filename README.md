@@ -376,6 +376,9 @@ Expected Outcome:
 
 Contributions to improve exercises or add new ones are welcome! Please submit a pull request.
 
+Inspiration:
+This repository has been inspired by the ([WebDevSimplified/Learn-SQL](https://github.com/WebDevSimplified/Learn-SQL)) repo
+
 ## License
 
 This project is available for educational purposes.
