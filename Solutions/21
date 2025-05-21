@@ -1,5 +1,6 @@
 Task 21: Create a view to show complete album information
-sqlCREATE VIEW album_info AS
+sql
+CREATE VIEW album_info AS
 SELECT b.name AS band_name, a.name AS album_name, a.release_year,
        COUNT(s.id) AS song_count, SUM(s.length) AS total_length
 FROM bands b

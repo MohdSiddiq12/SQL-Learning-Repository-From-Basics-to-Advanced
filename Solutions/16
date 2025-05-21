@@ -1,9 +1,11 @@
 6. Subqueries and Complex Queries
 Task 16: Find all bands that have albums released after 2015
-sqlSELECT DISTINCT b.name AS band_name
+sql
+SELECT DISTINCT b.name AS band_name
 FROM bands b
 JOIN albums a ON b.id = a.band_id
 WHERE a.release_year > 2015;
+
 Expected Outcome:
 | band_name        |
 |------------------|

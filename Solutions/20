@@ -1,8 +1,10 @@
 Task 20: Rank songs by length within each album
-sqlSELECT a.name AS album_name, s.name AS song_name, s.length AS song_length,
+sql
+SELECT a.name AS album_name, s.name AS song_name, s.length AS song_length,
        RANK() OVER (PARTITION BY s.album_id ORDER BY s.length DESC) AS rank
 FROM albums a
 JOIN songs s ON a.id = s.album_id;
+
 Expected Outcome:
 | album_name      | song_name        | song_length | rank |
 |-----------------|------------------|-------------|------|
