@@ -1,0 +1,7 @@
+Task 15: Delete a band that has no albums
+sql
+DELETE FROM bands
+WHERE id NOT IN (SELECT DISTINCT band_id FROM albums);
+
+Expected Outcome:
+Query OK, 1 row affected

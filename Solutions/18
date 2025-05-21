@@ -1,0 +1,18 @@
+Task 18: Find bands that have more than 10 songs
+sql
+SELECT b.name AS band_name, COUNT(s.id) AS song_count
+FROM bands b
+JOIN albums a ON b.id = a.band_id
+JOIN songs s ON a.id = s.album_id
+GROUP BY b.id, b.name
+HAVING COUNT(s.id) > 10;
+
+Expected Outcome:
+| band_name        | song_count |
+|------------------|------------|
+| Seventh Wonder   | 35         |
+| Metallica        | 27         |
+| The Ocean        | 31         |
+| Within Temptation| 30         |
+| Death            | 27         |
+| Van Canto        | 32         |

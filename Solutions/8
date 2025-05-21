@@ -1,0 +1,11 @@
+Task 8: Find all bands that have no albums
+sql
+SELECT b.name AS band_name
+FROM bands b
+LEFT JOIN albums a ON b.id = a.band_id
+WHERE a.id IS NULL;
+
+Expected Outcome:
+| band_name      |
+|----------------|
+| Dream Theater  |

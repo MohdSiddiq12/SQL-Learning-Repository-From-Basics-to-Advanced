@@ -1,0 +1,15 @@
+1. Basic SQL Queries
+Task 1: Select all data from the bands table
+sql
+SELECT * FROM bands;
+
+Expected Outcome:
+| id | name            |
+|----|-----------------|
+| 1  | Seventh Wonder  |
+| 2  | Metallica       |
+| 3  | The Ocean       |
+| 4  | Within Temptation |
+| 5  | Death           |
+| 6  | Van Canto       |
+| 7  | Dream Theater   |

@@ -1,0 +1,15 @@
+Task 17: Find albums that have songs longer than 8 minutes
+sql
+SELECT DISTINCT a.name AS album_name, b.name AS band_name
+FROM albums a
+JOIN bands b ON a.band_id = b.id
+JOIN songs s ON a.id = s.album_id
+WHERE s.length > 8;
+
+Expected Outcome:
+| album_name           | band_name       |
+|----------------------|-----------------|
+| The Great Escape     | Seventh Wonder  |
+| Mercy Falls          | Seventh Wonder  |
+| ...And Justice for All | Metallica     |
+| ...                  | ...             |

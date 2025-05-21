@@ -1,0 +1,14 @@
+Task 11: Find the average song length for each album
+sql
+SELECT a.name AS album_name, AVG(s.length) AS average_length
+FROM albums a
+JOIN songs s ON a.id = s.album_id
+GROUP BY a.id, a.name;
+
+Expected Outcome:
+| album_name            | average_length |
+|-----------------------|----------------|
+| The Great Escape      | 8.5            |
+| Tiara                | 4.35           |
+| ...And Justice for All | 6.42         |
+| ...                   | ...           |

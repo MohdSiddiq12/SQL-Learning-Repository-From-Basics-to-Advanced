@@ -1,0 +1,19 @@
+Task 21: Create a view to show complete album information
+sql
+CREATE VIEW album_info AS
+SELECT b.name AS band_name, a.name AS album_name, a.release_year,
+       COUNT(s.id) AS song_count, SUM(s.length) AS total_length
+FROM bands b
+JOIN albums a ON b.id = a.band_id
+LEFT JOIN songs s ON a.id = s.album_id
+GROUP BY b.id, b.name, a.id, a.name, a.release_year;
+
+-- To view the results:
+SELECT * FROM album_info;
+Expected Outcome:
+| band_name       | album_name      | release_year | song_count | total_length |
+|-----------------|-----------------|--------------|------------|--------------|
+| Seventh Wonder  | The Great Escape| 2010         | 8          | 68.5         |
+| Seventh Wonder  | Tiara          | 2018         | 13         | 56.6         |
+| ...             | ...            | ...          | ...        | ...          |
+8

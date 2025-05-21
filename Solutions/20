@@ -1,0 +1,15 @@
+Task 20: Rank songs by length within each album
+sql
+SELECT a.name AS album_name, s.name AS song_name, s.length AS song_length,
+       RANK() OVER (PARTITION BY s.album_id ORDER BY s.length DESC) AS rank
+FROM albums a
+JOIN songs s ON a.id = s.album_id;
+
+Expected Outcome:
+| album_name      | song_name        | song_length | rank |
+|-----------------|------------------|-------------|------|
+| The Great Escape| The Great Escape | 30.23       | 1    |
+| The Great Escape| Wiseman          | 5.42        | 2    |
+| Mercy Falls     | Unbreakable      | 9.48        | 1    |
+| Mercy Falls     | Welcome to Mercy Falls | 5.12  | 2    |
+| ...             | ...              | ...         | ...  |
